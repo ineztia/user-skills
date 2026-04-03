@@ -7,7 +7,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 | 技能名称 | 触发方式 | 功能描述 |
 |---------|---------|---------|
 | `_clarify-first` | 用内置澄清技能 / use clarify-first skill | 需求澄清专家，通过精准提问深度理解用户真实意图 |
-| `_prompt-fix` | 用提示词修正专家 / use prompt-fix skill | 提示词修正专家，平衡确定性与弹性，逻辑清晰、表达精炼 |
+| `_prompt-tidy` | 用提示词整理专家 / use prompt-tidy skill | 提示词整理专家，平衡确定性与弹性，逻辑清晰、表达精炼 |
 | `_prompt-optimizer` | 用内置优化技能 / use prompt-optimizer skill | 提示词优化专家，从价值最大化、实现路径深度广度等维度进行优化 |
 | `_cognitive-mentor` | 用认知导师 / use cognitive-mentor skill | 认知启示导师，通过苏格拉底式提问引导深度思考 |
 | `_master-awakening` | 用大师点醒 / use master-awakening skill | 大师点醒，用极简箴言点醒询问者 |
@@ -26,15 +26,15 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
-### `_prompt-fix` - 提示词修正专家
+### `_prompt-tidy` - 提示词整理专家
 
-基于全面理解修改提示词，平衡确定性与弹性。
+基于全面理解优化提示词，平衡确定性与弹性。
 
-**修正维度**：
-- 流程修补：补全缺漏环节，优化顺序
-- 逻辑修补：澄清含糊逻辑，修正混乱表述
-- 语文修补：修正错别字、语病
-- 格式修补：统一编号、标点、空格规范
+**整理维度**：
+- 流程优化：补全缺漏环节，优化顺序
+- 逻辑优化：澄清含糊逻辑，理顺混乱表述
+- 语文优化：修正错别字、语病
+- 格式优化：统一编号、标点、空格规范
 
 ---
 
@@ -98,7 +98,7 @@ skills/
 │       └── ...
 ├── _master-awakening/
 │   └── SKILL.md
-├── _prompt-fix/
+├── _prompt-tidy/
 │   └── SKILL.md
 └── _prompt-optimizer/
     └── SKILL.md
