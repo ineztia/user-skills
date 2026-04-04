@@ -8,10 +8,12 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 |---------|---------|---------|
 | `_clarify-first` | 用内置澄清技能 / use clarify-first skill | 需求澄清专家，通过精准提问深度理解用户真实意图 |
 | `_prompt-tidy` | 用提示词整理专家 / use prompt-tidy skill | 提示词整理专家，平衡确定性与弹性，逻辑清晰、表达精炼 |
-| `_prompt-optimizer` | 用内置优化技能 / use prompt-optimizer skill | 提示词优化专家，从价值最大化、实现路径深度广度等维度进行优化 |
+| `_prompt-fix` | 用提示词修补专家 / use prompt-fix skill | 提示词修补专家，仅修正语文表达、格式、层级序号的客观问题 |
+| `_prompt-rev` | 用提示词突破专家 / use prompt-rev skill | 提示词突破专家，颠覆性重构提示词，实现质变级跃升 |
 | `_cognitive-mentor` | 用认知导师 / use cognitive-mentor skill | 认知启示导师，通过苏格拉底式提问引导深度思考 |
 | `_master-awakening` | 用大师点醒 / use master-awakening skill | 大师点醒，用极简箴言点醒询问者 |
 | `_expert-group` | 使用专家合议组 / invoke expert-group skill | 权威合议组，多专家深度研讨复杂议题 |
+| `_mod-agents-md` | 模块化提示词 / use mod-agents-md skill | 将单体 AGENTS.md 模块化拆分为精简入口 + 模块目录 |
 
 ## 技能详情
 
@@ -38,14 +40,29 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
-### `_prompt-optimizer` - 提示词优化专家
+### `_prompt-fix` - 提示词修补专家
 
-从价值最大化、实现路径深度广度、视角盲区等维度进行优化。
+仅修正提示词在语文表达、格式、层级序号方面的客观问题。
 
-**三种优化策略**：
-- **策略 A - 升华再造**：颠覆性增删改，交付结果超出预期
-- **策略 B - 保守修复**：最小改动修复客观问题
-- **策略 C - 高级修复**：在 B 基础上允许指令纠偏、完善补充
+**修补范围**：
+- 语文表达：修正错别字、词语搭配不当、语法错误
+- 格式规范：统一标点符号、空格使用、段落排版
+- 层级序号：规范编号层级，确保序号连续、层级清晰
+
+**核心原则**：不改变提示词的意图、逻辑、功能，仅修正客观存在的表达问题。
+
+---
+
+### `_prompt-rev` - 提示词突破专家
+
+不满足于渐进式优化，而是对提示词进行颠覆性重构，打破常规认知边界。
+
+**执行协议**：
+1. 致命诊断：揭示提示词最大的认知陷阱
+2. 突破版本：给出最激进的重构方案
+3. 突破解密：说明质变逻辑
+
+**突破哲学**：问题从来不是「怎么写得更好」，而是「为什么这样写」。
 
 ---
 
@@ -82,6 +99,23 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 **专家类型**：会议主席、反对派、盲区猎手、黑天鹅权威、第一性原理权威、经济学家等 14 类专家角色。
 
+---
+
+### `_mod-agents-md` - 模块化拆分专家
+
+将单体 AGENTS.md / Claude.md 拆分为：精简入口文件 + 按职责分层的模块目录。
+
+**分层原则**：
+| 层级 | 职责 | 示例 |
+|------|------|------|
+| 身份层 | 角色设定、能力边界 | persona、boundaries |
+| 准则层 | 思维框架、沟通风格 | thinking、communication |
+| 工作流层 | 任务执行流程 | research、coding |
+| 领域层 | 项目上下文、术语表 | project-context |
+| 工具层 | 工具使用规范 | file-ops、search |
+
+**约束**：入口文件控制在 200 行以内，单个模块只承载一个职责。
+
 ## 目录结构
 
 ```
@@ -98,10 +132,15 @@ skills/
 │       └── ...
 ├── _master-awakening/
 │   └── SKILL.md
+├── _mod-agents-md/
+│   └── SKILL.md
+├── _prompt-fix/
+│   └── SKILL.md
+├── _prompt-rev/
+│   └── SKILL.md
 ├── _prompt-tidy/
 │   └── SKILL.md
-└── _prompt-optimizer/
-    └── SKILL.md
+└── README.md
 ```
 
 ## 使用方式
@@ -119,4 +158,4 @@ skills/
 - `logs/_clarify-first/` - 需求澄清记录
 - `logs/_cognitive-mentor/` - 认知对话记录
 - `logs/_expert-group/` - 专家合议流程记录
-- `logs/_prompt-optimizer/` - 提示词优化记录
+- `logs/_prompt-rev/` - 提示词突破记录
