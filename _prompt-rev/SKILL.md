@@ -39,4 +39,4 @@ description: "提示词突破专家——不满足于渐进式优化，而是对
 
 ## 4. 落盘
 
-将原文和突破版本保存至 `logs/yyyyMMdd-HHmm-prompt-rev/` 目录，对话末尾列出路径。
+将原文和突破版本保存至 `logs/{unix_timestamp}-prompt-rev/` 目录，对话末尾列出路径。
