@@ -10,11 +10,11 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 | `_prompt-tidy` | 用提示词整理专家 / use prompt-tidy skill | 提示词整理专家，平衡确定性与弹性，逻辑清晰、表达精炼 |
 | `_prompt-fix` | 用提示词修补专家 / use prompt-fix skill | 提示词修补专家，仅修正语文表达、格式、层级序号的客观问题 |
 | `_prompt-rev` | 用提示词突破专家 / use prompt-rev skill | 提示词突破专家，颠覆性重构提示词，实现质变级跃升 |
-| `_check-prompt-struct` | 审查提示词结构 / use check-prompt-struct skill | Prompt 结构审查专家，11 维度系统性结构审查，输出诊断报告 |
+| `_prompt-check-struct` | 审查提示词结构 / use check-prompt-struct skill | Prompt 结构审查专家，11 维度系统性结构审查，输出诊断报告 |
 | `_cognitive-mentor` | 用认知导师 / use cognitive-mentor skill | 认知启示导师，通过苏格拉底式提问引导深度思考 |
 | `_master-awakening` | 用大师点醒 / use master-awakening skill | 大师点醒，用极简箴言点醒询问者 |
 | `_expert-group` | 使用专家合议组 / invoke expert-group skill | 权威合议组，多专家深度研讨复杂议题 |
-| `_mod-agents-md` | 模块化提示词 / use mod-agents-md skill | 将单体 AGENTS.md 模块化拆分为精简入口 + 模块目录 |
+| `_shrink_agents_md` | 模块化提示词 / use mod-agents-md skill | 将单体 AGENTS.md 模块化拆分为精简入口 + 模块目录 |
 
 ## 技能详情
 
@@ -67,7 +67,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
-### `_check-prompt-struct` - Prompt 结构审查专家
+### `_prompt-check-struct` - Prompt 结构审查专家
 
 对提示词进行 11 维度系统性结构审查，识别架构缺陷、内容错位、逻辑漏洞等问题。
 
@@ -126,7 +126,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
-### `_mod-agents-md` - 模块化拆分专家
+### `_shrink_agents_md` - 模块化拆分专家
 
 将单体 AGENTS.md / Claude.md 拆分为：精简入口文件 + 按职责分层的模块目录。
 
@@ -145,8 +145,6 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ```
 skills/
-├── _check-prompt-struct/
-│   └── SKILL.md
 ├── _clarify-first/
 │   └── SKILL.md
 ├── _cognitive-mentor/
@@ -159,13 +157,15 @@ skills/
 │       └── ...
 ├── _master-awakening/
 │   └── SKILL.md
-├── _mod-agents-md/
+├── _prompt-check-struct/
 │   └── SKILL.md
 ├── _prompt-fix/
 │   └── SKILL.md
 ├── _prompt-rev/
 │   └── SKILL.md
 ├── _prompt-tidy/
+│   └── SKILL.md
+├── _shrink_agents_md/
 │   └── SKILL.md
 └── README.md
 ```
