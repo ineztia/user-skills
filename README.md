@@ -11,6 +11,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 | `_prompt-fix` | 用提示词修补专家 / use prompt-fix skill | 提示词修补专家，仅修正语文表达、格式、层级序号的客观问题 |
 | `_prompt-rev` | 用提示词突破专家 / use prompt-rev skill | 提示词突破专家，颠覆性重构提示词，实现质变级跃升 |
 | `_prompt-check-struct` | 审查提示词结构 / use check-prompt-struct skill | Prompt 结构审查专家，11 维度系统性结构审查，输出诊断报告 |
+| `_prompt-slim` | 用语句瘦身 / use prompt-slim skill | 语句瘦身专家，对确有冗余的语句进行无损凝练 |
 | `_cognitive-mentor` | 用认知导师 / use cognitive-mentor skill | 认知启示导师，通过苏格拉底式提问引导深度思考 |
 | `_master-awakening` | 用大师点醒 / use master-awakening skill | 大师点醒，用极简箴言点醒询问者 |
 | `_expert-group` | 使用专家合议组 / invoke expert-group skill | 权威合议组，多专家深度研讨复杂议题 |
@@ -91,6 +92,28 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
+### `_prompt-slim` - 语句瘦身专家
+
+对确有冗余的语句进行无损凝练，确保瘦身前后全文语境完全等效。
+
+**工作流程**：
+1. **理解阶段**（前置）：通读全文，吃透架构与语义，未完成不进入后续步骤
+2. **识别阶段**：在全文基础上定位三类冗余——冗余并列、相似意涵、可暗示解释
+3. **瘦身阶段**：对应执行去冗余并列、合并相似意涵、删除可暗示解释
+4. **校验阶段**：全文等效校验，放回全文确认呼应、约束、逻辑链完全等效
+
+**核心原则**：
+- 全局等效：信息量、约束强度、语气、跨句呼应与逻辑链条均不变
+- 不越界：不修正语病、不调整逻辑、不优化结构
+- 宁不缩减，不损原意
+
+**不处理情形**：
+- 原句已足够简洁
+- 冗余承担强调、节奏、枚举穷尽等功能
+- 孤立看似冗余但承担跨句约束、前提铺垫、消歧锚定或逻辑衔接的语句
+
+---
+
 ### `_cognitive-mentor` - 认知启示导师
 
 以超高格局认知型大师身份，通过苏格拉底式提问引导用户深度思考。
@@ -163,6 +186,8 @@ skills/
 │   └── SKILL.md
 ├── _prompt-rev/
 │   └── SKILL.md
+├── _prompt-slim/
+│   └── SKILL.md
 ├── _prompt-tidy/
 │   └── SKILL.md
 ├── _shrink_agents_md/
@@ -186,3 +211,4 @@ skills/
 - `logs/_cognitive-mentor/` - 认知对话记录
 - `logs/_expert-group/` - 专家合议流程记录
 - `logs/_prompt-rev/` - 提示词突破记录
+- `logs/_prompt-slim/` - 语句瘦身记录
