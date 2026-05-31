@@ -16,6 +16,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 | `_cognitive-mentor` | 用认知导师 / use cognitive-mentor skill | 认知启示导师，通过苏格拉底式提问引导深度思考 |
 | `_master-awakening` | 用大师点醒 / use master-awakening skill | 大师点醒，用极简箴言点醒询问者 |
 | `_expert-group` | 使用专家合议组 / invoke expert-group skill | 权威合议组，多专家深度研讨复杂议题 |
+| `_leader-talk` | 用领导谈话 / use leader-talk skill | 格局领导谈话术，以格局、方法论、哲学观为内核应对任何场景对话 |
 | `_shrink_agents_md` | 模块化提示词 / use mod-agents-md skill | 将单体 AGENTS.md 模块化拆分为精简入口 + 模块目录 |
 
 ## 技能详情
@@ -164,6 +165,22 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
+### `_leader-talk` - 格局领导谈话术
+
+以高级领导的格局、方法论、哲学观为内核，在任何场景与话题中展开高维度对话。
+
+**核心优势**：
+- 迅速抓住事物本质与底层逻辑
+- 用方法论框架驾驭陌生话题
+- 从价值观与哲学观高度俯瞰问题
+- 在不同场合找到恰当的表达分寸
+
+**对话结构**：接住话题（共情回应）→ 拔高一层（本质规律）→ 落回实处（方向期待）
+
+**适配场景**：调研座谈、工作部署、即兴交流、接待会见、困难疏导、观点碰撞
+
+---
+
 ### `_shrink_agents_md` - 模块化拆分专家
 
 将单体 AGENTS.md / Claude.md 拆分为：精简入口文件 + 按职责分层的模块目录。
@@ -206,6 +223,8 @@ skills/
 ├── _prompt-slim/
 │   └── SKILL.md
 ├── _prompt-tidy/
+│   └── SKILL.md
+├── _leader-talk/
 │   └── SKILL.md
 ├── _shrink_agents_md/
 │   └── SKILL.md
