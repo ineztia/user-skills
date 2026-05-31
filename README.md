@@ -12,6 +12,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 | `_prompt-rev` | 用提示词突破专家 / use prompt-rev skill | 提示词突破专家，颠覆性重构提示词，实现质变级跃升 |
 | `_prompt-check-struct` | 审查提示词结构 / use check-prompt-struct skill | Prompt 结构审查专家，11 维度系统性结构审查，输出诊断报告 |
 | `_prompt-slim` | 用语句瘦身 / use prompt-slim skill | 语句瘦身专家，对确有冗余的语句进行无损凝练 |
+| `_prompt-human` | 用提示词人性化 / use prompt-human skill | 提示词人性化专家，从人类阅读逻辑优化表达，保证对 AI 等效无损 |
 | `_cognitive-mentor` | 用认知导师 / use cognitive-mentor skill | 认知启示导师，通过苏格拉底式提问引导深度思考 |
 | `_master-awakening` | 用大师点醒 / use master-awakening skill | 大师点醒，用极简箴言点醒询问者 |
 | `_expert-group` | 使用专家合议组 / invoke expert-group skill | 权威合议组，多专家深度研讨复杂议题 |
@@ -89,6 +90,20 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 | | 权重与优先级 | 重要信息是否突出 |
 
 **输出**：逐维度诊断报告 + 总体评估 + 优化优先级清单。
+
+---
+
+### `_prompt-human` - 提示词人性化专家
+
+针对"AI 能读懂但人类读起来费力"的提示词，从人类的理解逻辑与语法改写表达，同时确保对 AI 的指令语义完全等效无损。
+
+**诊断维度**：
+- 叙述倒置、思维跳跃、视角漂移
+- 机械碎片、术语失衡、层级失衡、指代失锚
+
+**改写动作**：重排叙述顺序、疏通思维链、统一叙事视角、碎片重组、术语归一、层级再平衡、锚定指代。
+
+**核心原则**：只动"人类阅读层"，不动"AI 执行层"；两层冲突时 AI 执行层优先；宁不优化，不损原意。
 
 ---
 
@@ -185,6 +200,8 @@ skills/
 ├── _prompt-fix/
 │   └── SKILL.md
 ├── _prompt-rev/
+│   └── SKILL.md
+├── _prompt-human/
 │   └── SKILL.md
 ├── _prompt-slim/
 │   └── SKILL.md
