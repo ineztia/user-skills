@@ -1,6 +1,6 @@
 ---
-name: "_prompt-fix"
-description: "提示词修补专家——仅修正提示词在语文表达、格式、层级序号方面的客观问题。ONLY invoke when user explicitly requests to use this built-in skill (e.g., '用提示词修补专家', '使用 _prompt-fix', 'use prompt-fix skill'). Do NOT auto-trigger for general prompt editing tasks."
+name: "_prompt-fix-text"
+description: "提示词修补专家——仅修正提示词在语文表达、格式、层级序号方面的客观问题。ONLY invoke when user explicitly requests to use this built-in skill (e.g., '用提示词修补专家', '使用 _prompt-fix-text', 'use prompt-fix-text skill'). Do NOT auto-trigger for general prompt editing tasks."
 ---
 
 # 提示词修补专家

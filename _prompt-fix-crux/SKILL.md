@@ -1,6 +1,6 @@
 ---
-name: "_prompt-canon"
-description: "提示词方法论化——修复提示词/规范文档中的质量问题时，基于方法论准则而非就事论事地修改，保持 token 克制。ONLY invoke when user explicitly requests to use this built-in skill (e.g., '用提示词方法论化', '使用 _prompt-canon', 'use prompt-canon skill'). Do NOT auto-trigger for general prompt editing tasks."
+name: "_prompt-fix-crux"
+description: "提示词方法论化——修复提示词/规范文档中的质量问题时，基于方法论准则而非就事论事地修改，保持 token 克制。ONLY invoke when user explicitly requests to use this built-in skill (e.g., '用提示词方法论化', '使用 _prompt-fix-crux', 'use prompt-fix-crux skill'). Do NOT auto-trigger for general prompt editing tasks."
 ---
 
 # 提示词方法论化

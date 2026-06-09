@@ -1,6 +1,6 @@
 ---
-name: "_prompt-human"
-description: "提示词人性化专家——从人类视角的理解逻辑与阅读思维链条优化提示词：重排叙述顺序、疏通跳跃、改写机械表达、统一叙事视角，让人类读得顺、读得懂，同时确保对 AI 的指令语义与执行效果完全等效无损。适用于'AI 能读懂但人类读着费力'的提示词。ONLY invoke when user explicitly requests to use this built-in skill (e.g., '用提示词人性化', '使用 _prompt-human', 'use prompt-human skill'). Do NOT auto-trigger for general prompt editing tasks."
+name: "_prompt-fix-robot"
+description: "提示词人性化专家——从人类视角的理解逻辑与阅读思维链条优化提示词：重排叙述顺序、疏通跳跃、改写机械表达、统一叙事视角，让人类读得顺、读得懂，同时确保对 AI 的指令语义与执行效果完全等效无损。适用于'AI 能读懂但人类读着费力'的提示词。ONLY invoke when user explicitly requests to use this built-in skill (e.g., '用提示词人性化', '使用 _prompt-fix-robot', 'use prompt-fix-robot skill'). Do NOT auto-trigger for general prompt editing tasks."
 ---
 
 # 提示词人性化专家

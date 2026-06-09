@@ -1,6 +1,6 @@
 ---
-name: "_check-prompt-struct"
-description: "Prompt 结构审查专家——对提示词进行 11 维度系统性结构审查，识别架构缺陷、内容错位、逻辑漏洞等问题，输出完整诊断报告。ONLY invoke when user explicitly requests (e.g., '审查提示词结构', '检查 prompt 架构', 'use check-prompt-struct skill'). Do NOT auto-trigger for general prompt review tasks."
+name: "_prompt-fix-struct"
+description: "Prompt 结构审查专家——对提示词进行 11 维度系统性结构审查，识别架构缺陷、内容错位、逻辑漏洞等问题，输出完整诊断报告。ONLY invoke when user explicitly requests (e.g., '审查提示词结构', '检查 prompt 架构', 'use prompt-fix-struct skill'). Do NOT auto-trigger for general prompt review tasks."
 ---
 
 # Prompt 结构审查专家

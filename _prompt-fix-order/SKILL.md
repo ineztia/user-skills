@@ -1,6 +1,6 @@
 ---
-name: "_prompt-tidy"
-description: "提示词整理专家——基于全面理解优化提示词，平衡确定性与弹性，逻辑清晰、表达精炼。ONLY invoke when user explicitly requests to use this built-in skill (e.g., '用提示词整理专家', '使用 _prompt-tidy', 'use prompt-tidy skill'). Do NOT auto-trigger for general prompt editing tasks."
+name: "_prompt-fix-order"
+description: "提示词整理专家——基于全面理解优化提示词，平衡确定性与弹性，逻辑清晰、表达精炼。ONLY invoke when user explicitly requests to use this built-in skill (e.g., '用提示词整理专家', '使用 _prompt-fix-order', 'use prompt-fix-order skill'). Do NOT auto-trigger for general prompt editing tasks."
 ---
 
 # 提示词整理专家

@@ -7,13 +7,13 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 | 技能名称 | 触发方式 | 功能描述 |
 |---------|---------|---------|
 | `_clarify-first` | 用内置澄清技能 / use clarify-first skill | 需求澄清专家，通过精准提问深度理解用户真实意图 |
-| `_prompt-tidy` | 用提示词整理专家 / use prompt-tidy skill | 提示词整理专家，平衡确定性与弹性，逻辑清晰、表达精炼 |
-| `_prompt-fix` | 用提示词修补专家 / use prompt-fix skill | 提示词修补专家，仅修正语文表达、格式、层级序号的客观问题 |
+| `_prompt-fix-order` | 用提示词整理专家 / use prompt-fix-order skill | 提示词整理专家，平衡确定性与弹性，逻辑清晰、表达精炼 |
+| `_prompt-fix-text` | 用提示词修补专家 / use prompt-fix-text skill | 提示词修补专家，仅修正语文表达、格式、层级序号的客观问题 |
 | `_prompt-rev` | 用提示词突破专家 / use prompt-rev skill | 提示词突破专家，颠覆性重构提示词，实现质变级跃升 |
-| `_prompt-check-struct` | 审查提示词结构 / use check-prompt-struct skill | Prompt 结构审查专家，11 维度系统性结构审查，输出诊断报告 |
+| `_prompt-fix-struct` | 审查提示词结构 / use prompt-fix-struct skill | Prompt 结构审查专家，11 维度系统性结构审查，输出诊断报告 |
 | `_prompt-slim` | 用语句瘦身 / use prompt-slim skill | 语句瘦身专家，对确有冗余的语句进行无损凝练 |
-| `_prompt-human` | 用提示词人性化 / use prompt-human skill | 提示词人性化专家，从人类阅读逻辑优化表达，保证对 AI 等效无损 |
-| `_prompt-canon` | 用提示词方法论化 / use prompt-canon skill | 提示词方法论化，基于方法论准则而非就事论事地修改 |
+| `_prompt-fix-robot` | 用提示词人性化 / use prompt-fix-robot skill | 提示词人性化专家，从人类阅读逻辑优化表达，保证对 AI 等效无损 |
+| `_prompt-fix-crux` | 用提示词方法论化 / use prompt-fix-crux skill | 提示词方法论化，基于方法论准则而非就事论事地修改 |
 | `_cognitive-mentor` | 用认知导师 / use cognitive-mentor skill | 认知启示导师，通过苏格拉底式提问引导深度思考 |
 | `_master-awakening` | 用大师点醒 / use master-awakening skill | 大师点醒，用极简箴言点醒询问者 |
 | `_expert-group` | 使用专家合议组 / invoke expert-group skill | 权威合议组，多专家深度研讨复杂议题 |
@@ -33,7 +33,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
-### `_prompt-tidy` - 提示词整理专家
+### `_prompt-fix-order` - 提示词整理专家
 
 基于全面理解优化提示词，平衡确定性与弹性。
 
@@ -45,7 +45,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
-### `_prompt-fix` - 提示词修补专家
+### `_prompt-fix-text` - 提示词修补专家
 
 仅修正提示词在语文表达、格式、层级序号方面的客观问题。
 
@@ -71,7 +71,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
-### `_prompt-check-struct` - Prompt 结构审查专家
+### `_prompt-fix-struct` - Prompt 结构审查专家
 
 对提示词进行 11 维度系统性结构审查，识别架构缺陷、内容错位、逻辑漏洞等问题。
 
@@ -95,7 +95,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
-### `_prompt-human` - 提示词人性化专家
+### `_prompt-fix-robot` - 提示词人性化专家
 
 针对"AI 能读懂但人类读起来费力"的提示词，从人类的理解逻辑与语法改写表达，同时确保对 AI 的指令语义完全等效无损。
 
@@ -109,7 +109,7 @@ AI Agent 技能模块集合，用于扩展和增强 AI 助手的能力。
 
 ---
 
-### `_prompt-canon` - 提示词方法论化
+### `_prompt-fix-crux` - 提示词方法论化
 
 修复提示词/规范文档中的质量问题，遵循一条路径：**诊断根因 → 树立准则 → 最小化落笔**。
 
@@ -227,19 +227,19 @@ skills/
 │       └── ...
 ├── _master-awakening/
 │   └── SKILL.md
-├── _prompt-check-struct/
+├── _prompt-fix-struct/
 │   └── SKILL.md
-├── _prompt-fix/
+├── _prompt-fix-text/
 │   └── SKILL.md
 ├── _prompt-rev/
 │   └── SKILL.md
-├── _prompt-human/
+├── _prompt-fix-robot/
 │   └── SKILL.md
-├── _prompt-canon/
+├── _prompt-fix-crux/
 │   └── SKILL.md
 ├── _prompt-slim/
 │   └── SKILL.md
-├── _prompt-tidy/
+├── _prompt-fix-order/
 │   └── SKILL.md
 ├── _leader-talk/
 │   └── SKILL.md
